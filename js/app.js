@@ -26,6 +26,9 @@ $(function(){
 
     $('.grid').masonry({
         itemSelector: '.grid-item',
-        columnWidth: 80
+        columnWidth: 80,
+        percentPosition: true
     });
+
+    window.dispatchEvent(new Event('resize'));
 });
